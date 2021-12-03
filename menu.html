@@ -1,0 +1,161 @@
+<html>
+
+	<head>
+	
+		<title>Hotel</title>
+		
+	<head>
+	
+	<link rel="stylesheet" href="contact us.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Princess Sofia" rel="stylesheet">
+		
+	<body>
+		
+		<div>
+			<div class="background-image"></div>
+			
+			<div class="main">
+			
+					<div class="title">
+			
+						<h2>Bhuhari</h2>
+							
+					</div>
+						
+					<div class="menu-link">
+					
+						<ul>
+						
+							<li> <a href="index.html" class="line">Home </a></li>
+							
+							<li> <a href="About us.html" class="line">About us </a></li>
+							
+							<li> <a href="" class="line">Gallery </a></li>
+							
+							<li> <a href="menu.html" class="line">Menu </a></li>
+							
+							<li> <a href="contact us.html" class="line">Contact Us </a></li>
+							
+						</ul>
+						
+					</div>
+			</div>
+			
+			<div class="block-container">
+			
+				<div class="button-block">
+					
+					<button type="button" onclick="breakfast()">breakfast</button>
+					
+					<button type="button" onclick="lunch()">lunch</button>
+					
+					<button type="button" onclick="starters()">Starters</button>
+					
+					<button type="button" onclick="Dinner()">Dinner</button>
+				
+				
+				<div class="breakfast" style="display:block" id="breakfast">
+				
+					<ul>
+					
+						<li>Dosa</li>
+						<li>Idly</li>
+						<li>Puri</li>
+						<li>Pongal</li>
+						<li>Vada</li>
+					</ul>
+					
+				</div>
+				
+				<div class="lunch" style="display:none" id="lunch">
+					<ul>
+						<li>Meals</li>
+						<li>Biriyani</li>
+						<li>Noodels</li>
+						<li>Egggravy</li>
+						<li>Masala</li>
+						
+					</ul>
+				</div>
+				<div class="starters" style="display:none" id="starters">
+					<ul>
+						<li>Chatt</li>
+						<li>Pani Puri</li>
+						<li>Masala Puri</li>
+						<li>tea</li>
+						<li>Ice Creams</li>
+					</ul>
+				</div>
+				<div class="Dinner" style="display:none" id="Dinner">
+					<ul>
+						<li>Parota</li>
+						<li>Idly</li>
+						<li>Dosa</li>
+						<li>Rice</li>
+						<li>Chicken rice</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+		
+						
+	</body>
+	
+</html>
+
+<script>
+
+	function breakfast(){
+	
+	document.getElementById("breakfast").style.display = "block";
+	
+	document.getElementById("lunch").style.display = "none";
+	
+	document.getElementById("starters").style.display = "none";
+	
+	document.getElementById("Dinner").style.display = "none";
+		
+	
+	}
+	
+	function lunch(){
+	
+	document.getElementById("breakfast").style.display = "none";
+	
+	document.getElementById("lunch").style.display = "block";
+	
+	document.getElementById("starters").style.display = "none";
+	
+	document.getElementById("Dinner").style.display = "none";
+	
+	}
+	
+	function starters(){
+	
+	document.getElementById("breakfast").style.display = "none";
+	
+	document.getElementById("lunch").style.display = "none";
+	
+	document.getElementById("starters").style.display = "block";
+	
+	document.getElementById("Dinner").style.display = "none";
+	
+	
+	}
+	
+	function Dinner(){
+	
+	document.getElementById("breakfast").style.display = "none";
+	
+	document.getElementById("lunch").style.display = "none";
+	
+	document.getElementById("starters").style.display = "none";
+	
+	document.getElementById("Dinner").style.display = "block";
+		
+	}
+</script>

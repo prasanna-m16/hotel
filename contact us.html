@@ -1,0 +1,168 @@
+<html>
+
+	<head>
+	
+		<title>Hotel</title>
+		
+	<head>
+	
+	<link rel="stylesheet" href="contact us.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Princess Sofia" rel="stylesheet">
+		
+	<body>
+		
+		<div>
+			<div class="background-image"></div>
+			
+			<div class="main">
+			
+					<div class="title">
+			
+						<h2>Bhuhari</h2>
+							
+					</div>
+						
+					<div class="menu-link">
+					
+						<ul>
+						
+							<li> <a href="index.html" class="line">Home </a></li>
+							
+							<li> <a href="About us.html" class="line">About us </a></li>
+							
+							<li> <a href="" class="line">Gallery </a></li>
+							
+							<li> <a href="menu.html" class="line">Menu </a></li>
+							
+							<li> <a href="contact us.html" class="line">Contact Us </a></li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class="main-block">
+						
+						<div class="first" >
+						
+							<img src="male.png" class="mail" "height="50px" width="50px">
+							
+							<ul>
+								<li>bhuhari@hotel.com</li>
+								<li>bhuhari@food.com</li>
+							</ul>
+							
+						</div>
+						
+					
+						<div class="first" "second">
+						
+							<img src="call.png" class="call" height="50px" width="50px">
+							<ul>
+								<li>+91876541230</li>
+								<li>43210-245210</li>
+							</ul>
+							
+						</div>
+						
+						<div class="first" "third">
+							<img src="wa.jfif" class="wa" height="50px" width="50px">
+							<ul>
+								<li>+919876543210</li>
+								<li>+918976541230</li>
+							</ul>
+						</div>
+						
+						<div class="first" "fourth">
+						
+							<img src="utube.png" class="utube" height="50px" width="50px">
+							<ul>
+								<li>hotelbhuhari</li>
+								<li>bhuharifood</li>
+							</ul>
+							
+						</div>
+						
+					</div>
+			</div>
+		</div>
+					<div class="bottom-box">
+					
+						<div class="map">
+						
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4877024767598!2d80.25253271464551!3d13.004584890834222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f29aa9a61f%3A0x7ec2956af14795!2sBuhari%20Hotel!5e0!3m2!1sen!2sin!4v1630426124298!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						
+						<div class="form-box">
+						
+							<form>
+							
+								<label>First</label>
+								<input type="number" id="n1">
+								<br><br>
+								<label>Second</label>
+								<input type="number" id="n2">
+								<br><br>
+								<label>Result</label>
+								<input type="number" id="n3">
+								
+								<button type="button" onclick="Add()">Add</button>
+								<button type="button" onclick="Sub()">Sub</button>
+								<button type="button" onclick="Mul()">Mul</button>
+								<button type="button" onclick="Div()">Div</button>
+							</form>
+							
+						</div>
+					
+					</div>				
+	</body>
+	
+</html>
+
+<script>
+
+	function Add(){
+	
+	var n1 = document.getElementById("n1").value;
+	
+	var n2 = document.getElementById("n2").value;
+	
+	var n3 = parseInt(n1) + parseInt(n2);
+	
+	document.getElementById("n3").value=n3;
+	
+	}
+	function Sub(){
+	
+	var n1 = document.getElementById("n1").value;
+	
+	var n2 = document.getElementById("n2").value;
+	
+	var n3 = parseInt(n1) - parseInt(n2);
+	
+	document.getElementById("n3").value=n3;
+	
+	}
+	function Mul(){
+	
+	var n1 = document.getElementById("n1").value;
+	
+	var n2 = document.getElementById("n2").value;
+	
+	var n3 = parseInt(n1) * parseInt(n2);
+	
+	document.getElementById("n3").value=n3;
+	
+	}
+	function Div(){
+	
+	var n1 = document.getElementById("n1").value;
+	
+	var n2 = document.getElementById("n2").value;
+	
+	var n3 = parseInt(n1) / parseInt(n2);
+	
+	document.getElementById("n3").value=n3;
+	
+	}
+</script>
